@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.general {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loading {
+  display: flex;
+  gap: 20px;
+}
+.col {
+  width: 4px;
+  height: 60px;
+  background-color: lightgreen;
+  animation: loading 0.6s linear infinite;
+}
+.col-2 {
+  animation-delay: 0.05s;
+}
+.col-3 {
+  animation-delay: 0.1s;
+}
+.col-4 {
+  animation-delay: 0.15s;
+}
+.col-5 {
+  animation-delay: 0.2s;
+}
+.col-6 {
+  animation-delay: 0.25s;
+}
+.col-7 {
+  animation-delay: 0.3s;
+}
+.col-8 {
+  animation-delay: 0.35s;
+}
+.col-9 {
+  animation-delay: 0.4s;
+}
+.col-10 {
+  animation-delay: 0.45s;
+}
+.col-11 {
+  animation-delay: 0.5s;
+}
+.col-12 {
+  animation-delay: 0.55s;
+}
+
+@keyframes loading {
+  50% {
+    transform: scaleY(2);
+    background-color: yellow;
+  }
+  100% {
+    transform: scaleY(1);
+    background-color: lightgreen;
+  }
+}
